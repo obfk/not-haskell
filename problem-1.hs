@@ -15,8 +15,3 @@ sumOfMultiplesOf3And5 upperLimit =
   where
     numbersUnderLimit = [0..(upperLimit-1)]
     candidates = filter (\n -> n `mod` 3 == 0 || n `mod` 5 == 0) numbersUnderLimit
-
-
-test :: Bool
-test =
-  sumOfMultiplesOf3And5 10 == 23
